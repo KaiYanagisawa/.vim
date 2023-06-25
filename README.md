@@ -4,7 +4,7 @@
 # vimsettings使用方法
 .vim/ にリポジトリをクローン
 
-``` $ git clone https://github.com/KaiYanagisawa/vimsettings.git ```
+``` $ git clone https://github.com/KaiYanagisawa/.vim.git ```
 
 その後、~/.vim/.vimrcのシンボリックリンクを ~/に作成する
 
