@@ -1,0 +1,2 @@
+3.0
+{'vim-commentary': {'checked_time': 1687675020, 'installed_uri': 'https://github.com/tpope/vim-commentary.git', 'installed_path': '/Users/yanagisawakai/.vim/bundle/vim-commentary', 'revisions': {'1667247706': 'e87cd90dc09c2a203e13af9704bd0ef79303d755'}, 'updated_time': '1667247706'}, 'unite.vim': {'checked_time': 1687660960, 'installed_uri': 'https://github.com/Shougo/unite.vim.git', 'installed_path': '/Users/yanagisawakai/.vim/bundle/unite.vim', 'revisions': {'1684403289': '0ccb3f7988d61a9a86525374be97360bd20db6bc'}, 'updated_time': '1684403289'}}
