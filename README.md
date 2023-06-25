@@ -9,3 +9,6 @@
 その後、~/.vim/.vimrcのシンボリックリンクを ~/に作成する
 
 ``` $ ln -s ~/.vim/.vimrc ~/.vimrc ```
+
+~/.vimrc 内のノーマルモードでプラグインをインストール
+``` :PlugInstall ```
