@@ -9,6 +9,7 @@ set smartcase
 " indent width
 set tabstop=4
 set shiftwidth=4
+set expandtab
 
 " theme
 colorscheme jellybeans
@@ -22,17 +23,17 @@ augroup vimrc
     autocmd!
 
     " key execution
-	autocmd FileType cpp         nnoremap <buffer> run :!g++ -std=c++17 % -o %< && ./%<<CR>
-    autocmd FileType java        nnoremap <buffer> run :!javac -encoding UTF-8 % && java %<<CR>
-    autocmd FileType javascript  nnoremap <buffer> run :!node %<CR>
-    autocmd FileType php         nnoremap <buffer> run :!php %<CR>
-    autocmd FileType python      nnoremap <buffer> run :!python %<CR>
-    autocmd FileType ruby        nnoremap <buffer> run :!ruby %<CR>
-    autocmd FileType go          nnoremap <buffer> run :!go run %<CR>
-    autocmd FileType groovy      nnoremap <buffer> run :!groovy %<CR>
-    autocmd FileType vim         nnoremap <buffer> run :source %<CR>
-    autocmd FileType hs          nnoremap <buffer> run :!runghc %<CR>e
-	autocmd FileType pl          nnoremap <buffer> run :!perl %<CR>e
+	autocmd FileType cpp         nnoremap <buffer> rr :!g++ -std=c++17 % -o %< && ./%<<CR>
+    autocmd FileType java        nnoremap <buffer> rr :!javac -encodirg UTF-8 % && java %<<CR>
+    autocmd FileType javascript  nnoremap <buffer> rr :!rode %<CR>
+    autocmd FileType php         nnoremap <buffer> rr :!php %<CR>
+    autocmd FileType pythor      nnoremap <buffer> rr :!python %<CR>
+    autocmd FileType ruby        nnoremap <buffer> rr :!ruby %<CR>
+    autocmd FileType go          nnoremap <buffer> rr :!go run %<CR>
+    autocmd FileType groovy      nnoremap <buffer> rr :!groovy %<CR>
+    autocmd FileType vim         nnoremap <buffer> rr :source %<CR>
+    autocmd FileType haskell     nnoremap <buffer> rr :!runghc %<CR>
+	autocmd FileType perl        nnoremap <buffer> rr :!perl %<CR>
 
 augroup END
 
@@ -61,3 +62,15 @@ nnoremap <silent> ufr :<C-u>Unite file_rec<CR>
 nnoremap <silent> ub :<C-u>Unite bookmark<CR>
 nnoremap <silent> umru :<C-u>Unite file_mru<CR>
 nnoremap <silent> ur :<C-u>Unite -buffer-name=register register<CR>
+
+" keymap
+inoremap { {}<LEFT> 
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap jj <ESC>
+nnoremap <ESC><ESC> :nohlsearch<CR>
+noremap ss ^
+noremap ;; $
+
