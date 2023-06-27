@@ -27,7 +27,7 @@ augroup vimrc
     autocmd FileType java        nnoremap <buffer> rr :!javac -encodirg UTF-8 % && java %<<CR>
     autocmd FileType javascript  nnoremap <buffer> rr :!rode %<CR>
     autocmd FileType php         nnoremap <buffer> rr :!php %<CR>
-    autocmd FileType pythor      nnoremap <buffer> rr :!python %<CR>
+    autocmd FileType python      nnoremap <buffer> rr :!python3 %<CR>
     autocmd FileType ruby        nnoremap <buffer> rr :!ruby %<CR>
     autocmd FileType go          nnoremap <buffer> rr :!go run %<CR>
     autocmd FileType groovy      nnoremap <buffer> rr :!groovy %<CR>
