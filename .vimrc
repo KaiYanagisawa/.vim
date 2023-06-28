@@ -16,6 +16,16 @@ set expandtab
 colorscheme jellybeans
 syntax on
 
+" cursor style 
+if has('vim_starting')
+    " Insert mode cursor type
+    let &t_SI .= "\e[6 q"
+    " Normal mode cursor type
+    let &t_EI .= "\e[1 q"
+    " Replace mode cursor type
+    let &t_SR .= "\e[3 q"
+endif
+
 " File type detection is On.
 filetype on
 
@@ -69,10 +79,12 @@ nnoremap <silent> ur :<C-u>Unite -buffer-name=register register<CR>
 inoremap { {}<LEFT> 
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
+inoremap < <><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap jj <ESC>
-nnoremap <ESC><ESC> :nohlsearch<CR>
+noremap <C-j> <ESC>
+inoremap <C-j> <ESC>
+nnoremap <C-j><C-n> :nohlsearch<CR>
 noremap ss ^
 noremap ;; $
 
