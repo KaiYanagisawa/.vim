@@ -5,6 +5,7 @@ set virtualedit=block
 set backspace=indent,eol,start
 set ignorecase
 set smartcase
+set hlsearch
 
 " indent width
 set tabstop=4
@@ -45,12 +46,13 @@ call plug#begin()
 	Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 	Plug 'https://github.com/tomtom/tcomment_vim'
 	Plug 'https://github.com/Shougo/unite.vim'
+    Plug 'https://github.com/airblade/vim-gitgutter'
 call plug#end()
 
 " nerdtree
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-s> :NERDTreeFind<CR>
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
