@@ -45,7 +45,6 @@ augroup vimrc
     autocmd FileType vim         nnoremap <buffer> rr :source %<CR>
     autocmd FileType haskell     nnoremap <buffer> rr :!runghc %<CR>
 	autocmd FileType perl        nnoremap <buffer> rr :!perl %<CR>
-
 augroup END
 
 " plugin
@@ -84,7 +83,7 @@ inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 noremap <C-j> <ESC>
 inoremap <C-j> <ESC>
+cnoremap <C-j> <ESC>
 nnoremap <C-j><C-n> :nohlsearch<CR>
 noremap ss ^
 noremap ;; $
-
