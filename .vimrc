@@ -14,7 +14,7 @@ set expandtab
 
 " theme
 colorscheme jellybeans
-syntax on
+syntax on 
 
 " cursor style 
 if has('vim_starting')
@@ -56,6 +56,8 @@ call plug#begin()
 	Plug 'https://github.com/tomtom/tcomment_vim'
 	Plug 'https://github.com/Shougo/unite.vim'
     Plug 'https://github.com/airblade/vim-gitgutter'
+    Plug 'https://github.com/itchyny/lightline.vim'
+    " Plug 'https://github.com/justmao945/vim-clang'
 call plug#end()
 
 " nerdtree
@@ -74,11 +76,13 @@ nnoremap <silent> ub :<C-u>Unite bookmark<CR>
 nnoremap <silent> umru :<C-u>Unite file_mru<CR>
 nnoremap <silent> ur :<C-u>Unite -buffer-name=register register<CR>
 
+" lightline
+set laststatus=2
+
 " keymap
 inoremap { {}<LEFT> 
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
-inoremap < <><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 noremap <C-j> <ESC>
