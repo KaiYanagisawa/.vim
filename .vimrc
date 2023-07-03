@@ -80,11 +80,6 @@ nnoremap <silent> ur :<C-u>Unite -buffer-name=register register<CR>
 set laststatus=2
 
 " keymap
-inoremap { {}<LEFT> 
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 noremap <C-j> <ESC>
 inoremap <C-j> <ESC>
 cnoremap <C-j> <ESC>
